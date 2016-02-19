@@ -3,6 +3,14 @@
 var executor = require('./lib/executor');
 var monitor = require('./lib/monitor');
 console.log('start test');
+executor.getValues({
+	url: 'http://www.haicang.gov.cn/xx/zdxxgk/jbxxgk/rsxx/zkzp/',
+	jqpath: 'div.hc15_xx_list li a',
+}, function(err, value) {
+	if(err)
+		return console.error(err);
+	console.log(value);
+});
 // executor.compare({
 // 	url: 'url2',
 // 	jqpath: 'jqpath2',
@@ -64,12 +72,11 @@ console.log('start test');
 // 	console.log('success');
 // });
 
-monitor.addOrUpdateMonitor({
-	url: 'url2',
-	jqpath: 'jqpath2',
-	user: 'hj',
-	notifiers: {emails : ['nots2']},
-	value: 'value2'
-},function(){
-	console.log('success');
-});
+// monitor.addOrUpdateMonitor({
+// 	url: 'http://www.sina.com.cn/',
+// 	jqpath: '#newslist_a',
+// 	user: 'hj',
+// 	notifiers: {emails : ['johnnyyellow@gmail.com']},
+// },function(){
+// 	console.log('success');
+// });
