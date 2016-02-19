@@ -31,7 +31,7 @@ console.log('start to run');
 monitor.addOrUpdateMonitor({
 	url: 'http://www.xmws.gov.cn/sydwzk/policy/policy.jsp?TypeID=7',
 	jqpath: 'form[name=formRight] table:nth-of-type(5) td a'
-	user: 'hjy',
+	nuser: 'hjy',
 	notifiers: {emails : ['johnnyyellow@gmail.com']},
 },function(){
 	console.log('success to start');
@@ -39,7 +39,7 @@ monitor.addOrUpdateMonitor({
 monitor.addOrUpdateMonitor({
 	url: 'http://www.xmrs.gov.cn/syggc/syzp/zkdt/',
 	jqpath: '#news a',
-	user: 'hjy',
+	nuser: 'hjy',
 	notifiers: {emails : ['johnnyyellow@gmail.com']},
 },function(){
 	console.log('success to start');
