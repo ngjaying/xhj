@@ -37,12 +37,39 @@ console.log('start test');
 // 	console.log('no change');
 // });
 
-monitor.sendEmail({
-	notifiers: ['ngjaying@gmail.com', 'johnnyyellow@gmail.com'],
-	blockname: 'xiamenweisheng',
-	value: 'new value'
-}, function(err, info) {
-	if (err)
-		return console.log(err);
-	console.log('end test');
+// monitor.sendEmail({
+// 	notifiers: ['ngjaying@gmail.com', 'johnnyyellow@gmail.com'],
+// 	blockname: 'xiamenweisheng',
+// 	value: 'new value'
+// }, function(err, info) {
+// 	if (err)
+// 		return console.log(err);
+// 	console.log('end test');
+// });
+// monitor.addOrUpdateMonitor({
+// 	url: 'url2',
+// 	jqpath: 'jqpath2',
+// 	user: 'hj',
+// 	notifiers: {emails: ['nots'], wechats : ['abc']}
+// }, function(){
+// 	console.log('success');
+// });
+
+// monitor.addOrUpdateMonitor({
+// 	url: 'url2',
+// 	jqpath: 'jqpath2',
+// 	user: 'hj',
+// 	notifiers: {emails : ['nots2']}
+// },function(){
+// 	console.log('success');
+// });
+
+monitor.addOrUpdateMonitor({
+	url: 'url2',
+	jqpath: 'jqpath2',
+	user: 'hj',
+	notifiers: {emails : ['nots2']},
+	value: 'value2'
+},function(){
+	console.log('success');
 });
