@@ -9,6 +9,7 @@
     "later": "^1.2.0",
     "md5": "^2.0.0",
     "mongoose": "^4.4.4",
+    "nodemailer": "^2.2.0",
     "request": "^2.69.0"
   },
   "devDependencies": {
