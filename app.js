@@ -33,6 +33,7 @@ monitor.addOrUpdateMonitor({
 	jqpath: 'form[name=formRight] table:nth-of-type(5) td a',
 	nuser: 'hjy',
 	notifiers: {emails : ['johnnyyellow@gmail.com']},
+	blockname: '厦门卫生事业单位'
 },function(){
 	console.log('success to start');
 });
@@ -41,6 +42,7 @@ monitor.addOrUpdateMonitor({
 	jqpath: '#news a',
 	nuser: 'hjy',
 	notifiers: {emails : ['johnnyyellow@gmail.com']},
+	blockname: '厦门事业单位'
 },function(){
 	console.log('success to start');
 });
@@ -49,6 +51,7 @@ monitor.addOrUpdateMonitor({
 	jqpath: 'table.h30.mar_t10 a',
 	user: 'hjy',
 	notifiers: {emails : ['johnnyyellow@gmail.com']},
+	blockname: '集美人事'
 },function(){
 	console.log('success to start');
 });
@@ -57,6 +60,7 @@ monitor.addOrUpdateMonitor({
 	jqpath: 'div.hc15_xx_list li a',
 	user: 'hjy',
 	notifiers: {emails : ['johnnyyellow@gmail.com']},
+	blockname: '海沧人事'
 },function(){
 	console.log('success to start');
 });
