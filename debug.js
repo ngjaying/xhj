@@ -3,14 +3,14 @@
 var executor = require('./lib/executor');
 var monitor = require('./lib/monitor');
 console.log('start test');
-executor.getValues({
-	url: 'http://www.haicang.gov.cn/xx/zdxxgk/jbxxgk/rsxx/zkzp/',
-	jqpath: 'div.hc15_xx_list li a',
-}, function(err, value) {
-	if(err)
-		return console.error(err);
-	console.log(value);
-});
+// executor.getValues({
+// 	url: 'http://www.haicang.gov.cn/xx/zdxxgk/jbxxgk/rsxx/zkzp/',
+// 	jqpath: 'div.hc15_xx_list li a',
+// }, function(err, value) {
+// 	if(err)
+// 		return console.error(err);
+// 	console.log(value);
+// });
 // executor.compare({
 // 	url: 'url2',
 // 	jqpath: 'jqpath2',
@@ -45,19 +45,19 @@ executor.getValues({
 // 	console.log('no change');
 // });
 
-// monitor.sendEmail({
-// 	notifiers: ['ngjaying@gmail.com', 'johnnyyellow@gmail.com'],
-// 	blockname: 'xiamenweisheng',
-// 	value: 'new value'
-// }, function(err, info) {
-// 	if (err)
-// 		return console.log(err);
-// 	console.log('end test');
-// });
+monitor.sendEmail({
+	notifiers: ['johnnyyellow@gmail.com'],
+	blockname: 'xiamenweisheng',
+	value: 'new value'
+}, function(err, info) {
+	if (err)
+		return console.log(err);
+	console.log('end test');
+});
 // monitor.addOrUpdateMonitor({
 // 	url: 'url2',
 // 	jqpath: 'jqpath2',
-// 	user: 'hj',
+// 	nuser: 'hj',
 // 	notifiers: {emails: ['nots'], wechats : ['abc']}
 // }, function(){
 // 	console.log('success');
@@ -75,7 +75,7 @@ executor.getValues({
 // monitor.addOrUpdateMonitor({
 // 	url: 'http://www.sina.com.cn/',
 // 	jqpath: '#newslist_a',
-// 	user: 'hj',
+// 	nuser: 'hj',
 // 	notifiers: {emails : ['johnnyyellow@gmail.com']},
 // },function(){
 // 	console.log('success');

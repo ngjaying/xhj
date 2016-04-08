@@ -30,7 +30,7 @@ var executor = require('./lib/executor');
 console.log('start to run');
 monitor.addOrUpdateMonitor({
 	url: 'http://www.xmws.gov.cn/sydwzk/policy/policy.jsp?TypeID=7',
-	jqpath: 'form[name=formRight] table:nth-of-type(5) td a'
+	jqpath: 'form[name=formRight] table:nth-of-type(5) td a',
 	nuser: 'hjy',
 	notifiers: {emails : ['johnnyyellow@gmail.com']},
 },function(){
