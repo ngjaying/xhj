@@ -1,6 +1,6 @@
 'use strict';
 
-var executor = require('./lib/executor');
+var monitor = require('./lib/monitor');
 
 // executor.compare({
 // 	url: 'url2',
